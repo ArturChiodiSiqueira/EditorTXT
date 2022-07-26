@@ -62,7 +62,7 @@
             this.sobreOEditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusBar = new System.Windows.Forms.StatusStrip();
             this.statusBarLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.txtConteudo = new System.Windows.Forms.RichTextBox();
             this.menuBar.SuspendLayout();
             this.statusBar.SuspendLayout();
             this.SuspendLayout();
@@ -314,20 +314,21 @@
             this.statusBarLabel.Size = new System.Drawing.Size(49, 20);
             this.statusBarLabel.Text = "100 %";
             // 
-            // richTextBox1
+            // txtConteudo
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(215, 240);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(125, 120);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "";
+            this.txtConteudo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtConteudo.Location = new System.Drawing.Point(0, 36);
+            this.txtConteudo.Name = "txtConteudo";
+            this.txtConteudo.Size = new System.Drawing.Size(782, 491);
+            this.txtConteudo.TabIndex = 2;
+            this.txtConteudo.Text = "";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 553);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.txtConteudo);
             this.Controls.Add(this.statusBar);
             this.Controls.Add(this.menuBar);
             this.MainMenuStrip = this.menuBar;
@@ -379,6 +380,6 @@
         private System.Windows.Forms.ToolStripMenuItem sobreOEditorToolStripMenuItem;
         private System.Windows.Forms.StatusStrip statusBar;
         private System.Windows.Forms.ToolStripStatusLabel statusBarLabel;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox txtConteudo;
     }
 }
