@@ -101,47 +101,48 @@
             // mArquivoNovo
             // 
             this.mArquivoNovo.Name = "mArquivoNovo";
-            this.mArquivoNovo.Size = new System.Drawing.Size(211, 32);
+            this.mArquivoNovo.Size = new System.Drawing.Size(224, 32);
             this.mArquivoNovo.Text = "Novo";
+            this.mArquivoNovo.Click += new System.EventHandler(this.mArquivoNovo_Click);
             // 
             // mArquivoNovaJanela
             // 
             this.mArquivoNovaJanela.Name = "mArquivoNovaJanela";
-            this.mArquivoNovaJanela.Size = new System.Drawing.Size(211, 32);
+            this.mArquivoNovaJanela.Size = new System.Drawing.Size(224, 32);
             this.mArquivoNovaJanela.Text = "Nova Janela";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(208, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
             // 
             // mArquivoAbrir
             // 
             this.mArquivoAbrir.Name = "mArquivoAbrir";
-            this.mArquivoAbrir.Size = new System.Drawing.Size(211, 32);
+            this.mArquivoAbrir.Size = new System.Drawing.Size(224, 32);
             this.mArquivoAbrir.Text = "Abrir";
             // 
             // mArquivoSalvar
             // 
             this.mArquivoSalvar.Name = "mArquivoSalvar";
-            this.mArquivoSalvar.Size = new System.Drawing.Size(211, 32);
+            this.mArquivoSalvar.Size = new System.Drawing.Size(224, 32);
             this.mArquivoSalvar.Text = "Salvar";
             // 
             // mArquivoSalvarComo
             // 
             this.mArquivoSalvarComo.Name = "mArquivoSalvarComo";
-            this.mArquivoSalvarComo.Size = new System.Drawing.Size(211, 32);
+            this.mArquivoSalvarComo.Size = new System.Drawing.Size(224, 32);
             this.mArquivoSalvarComo.Text = "Salvar Como";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(208, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(221, 6);
             // 
             // mArquivoSair
             // 
             this.mArquivoSair.Name = "mArquivoSair";
-            this.mArquivoSair.Size = new System.Drawing.Size(211, 32);
+            this.mArquivoSair.Size = new System.Drawing.Size(224, 32);
             this.mArquivoSair.Text = "Sair";
             // 
             // mEditar
@@ -163,53 +164,53 @@
             // mEditarDesfazer
             // 
             this.mEditarDesfazer.Name = "mEditarDesfazer";
-            this.mEditarDesfazer.Size = new System.Drawing.Size(224, 32);
+            this.mEditarDesfazer.Size = new System.Drawing.Size(206, 32);
             this.mEditarDesfazer.Text = "Desfazer";
             // 
             // mEditarRefazer
             // 
             this.mEditarRefazer.Name = "mEditarRefazer";
-            this.mEditarRefazer.Size = new System.Drawing.Size(224, 32);
+            this.mEditarRefazer.Size = new System.Drawing.Size(206, 32);
             this.mEditarRefazer.Text = "Refazer";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(203, 6);
             // 
             // mEditarRecortar
             // 
             this.mEditarRecortar.Name = "mEditarRecortar";
-            this.mEditarRecortar.Size = new System.Drawing.Size(224, 32);
+            this.mEditarRecortar.Size = new System.Drawing.Size(206, 32);
             this.mEditarRecortar.Text = "Recortar";
             // 
             // mEditarCopiar
             // 
             this.mEditarCopiar.Name = "mEditarCopiar";
-            this.mEditarCopiar.Size = new System.Drawing.Size(224, 32);
+            this.mEditarCopiar.Size = new System.Drawing.Size(206, 32);
             this.mEditarCopiar.Text = "Copiar";
             // 
             // mEditarColar
             // 
             this.mEditarColar.Name = "mEditarColar";
-            this.mEditarColar.Size = new System.Drawing.Size(224, 32);
+            this.mEditarColar.Size = new System.Drawing.Size(206, 32);
             this.mEditarColar.Text = "Colar";
             // 
             // mEditarExcluir
             // 
             this.mEditarExcluir.Name = "mEditarExcluir";
-            this.mEditarExcluir.Size = new System.Drawing.Size(224, 32);
+            this.mEditarExcluir.Size = new System.Drawing.Size(206, 32);
             this.mEditarExcluir.Text = "Excluir";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(203, 6);
             // 
             // mEditarDataEHora
             // 
             this.mEditarDataEHora.Name = "mEditarDataEHora";
-            this.mEditarDataEHora.Size = new System.Drawing.Size(224, 32);
+            this.mEditarDataEHora.Size = new System.Drawing.Size(206, 32);
             this.mEditarDataEHora.Text = "Data e Hora";
             // 
             // mFormatar

@@ -17,5 +17,9 @@ namespace EditorTXT
             InitializeComponent();
         }
 
+        private void mArquivoNovo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
