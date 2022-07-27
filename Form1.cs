@@ -39,7 +39,25 @@ namespace EditorTXT
 
         private void mArquivoSalvar_Click(object sender, EventArgs e)
         {
+            if (File.Exists(Gerenciador.FilePath))
+            {
+                SalvarArquivo(Gerenciador.FilePath);
+            }
+            else
+            {
+                SaveFileDialog dialog = new SaveFileDialog();
+                dialog.Title = "Salvar...";
+                dialog.Filter = "rich text file|*.rtf|texto|*.txt|todos|*.*";
+                dialog.CheckFileExists = false;
+                dialog.CheckPathExists = true;
 
+                var result = dialog.ShowDialog();
+
+                if (result != DialogResult.Cancel && result != DialogResult.Abort)
+                {
+                    SalvarArquivo(dialog.FileName);
+                }
+            }
         }
 
         private void mArquivoSalvarComo_Click(object sender, EventArgs e)
