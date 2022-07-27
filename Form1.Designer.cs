@@ -110,6 +110,7 @@
             this.mArquivoNovaJanela.Name = "mArquivoNovaJanela";
             this.mArquivoNovaJanela.Size = new System.Drawing.Size(224, 32);
             this.mArquivoNovaJanela.Text = "Nova Janela";
+            this.mArquivoNovaJanela.Click += new System.EventHandler(this.mArquivoNovaJanela_Click);
             // 
             // toolStripSeparator1
             // 
