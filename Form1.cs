@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -44,6 +45,31 @@ namespace EditorTXT
         private void mArquivoSalvarComo_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void SalvarArquivo(string path)
+        {
+            // objeto responsavel por escrever o arquvo
+            StreamWriter writer = null;
+
+            try
+            {
+                writer = new StreamWriter(path, false);
+                writer.Write(txtConteudo.Text);
+
+                FileInfo file = new FileInfo(path);
+                Gerenciador.FolderPath = file.DirectoryName + "\\";
+                Gerenciador.FileName = file.Name.Remove(file.Name.LastIndexOf("."));
+                Gerenciador.FileExt = file.Extension;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao Salvar o Arquivo: \n" + ex.Message);
+            }
+            finally
+            {
+                writer.Close();
+            }
         }
 
         private void mArquivoSair_Click(object sender, EventArgs e)
