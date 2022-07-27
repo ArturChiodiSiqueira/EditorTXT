@@ -122,18 +122,21 @@
             this.mArquivoAbrir.Name = "mArquivoAbrir";
             this.mArquivoAbrir.Size = new System.Drawing.Size(224, 32);
             this.mArquivoAbrir.Text = "Abrir";
+            this.mArquivoAbrir.Click += new System.EventHandler(this.mArquivoAbrir_Click);
             // 
             // mArquivoSalvar
             // 
             this.mArquivoSalvar.Name = "mArquivoSalvar";
             this.mArquivoSalvar.Size = new System.Drawing.Size(224, 32);
             this.mArquivoSalvar.Text = "Salvar";
+            this.mArquivoSalvar.Click += new System.EventHandler(this.mArquivoSalvar_Click);
             // 
             // mArquivoSalvarComo
             // 
             this.mArquivoSalvarComo.Name = "mArquivoSalvarComo";
             this.mArquivoSalvarComo.Size = new System.Drawing.Size(224, 32);
             this.mArquivoSalvarComo.Text = "Salvar Como";
+            this.mArquivoSalvarComo.Click += new System.EventHandler(this.mArquivoSalvarComo_Click);
             // 
             // toolStripSeparator2
             // 
@@ -145,6 +148,7 @@
             this.mArquivoSair.Name = "mArquivoSair";
             this.mArquivoSair.Size = new System.Drawing.Size(224, 32);
             this.mArquivoSair.Text = "Sair";
+            this.mArquivoSair.Click += new System.EventHandler(this.mArquivoSair_Click);
             // 
             // mEditar
             // 

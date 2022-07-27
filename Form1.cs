@@ -30,6 +30,31 @@ namespace EditorTXT
             t.SetApartmentState(ApartmentState.STA);
             t.Start();
         }
+
+        private void mArquivoAbrir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mArquivoSalvar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mArquivoSalvarComo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mArquivoSair_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("Deseja realmente sair?", "SAIR", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
         #endregion
     }
 }
