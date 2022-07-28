@@ -178,7 +178,7 @@ namespace EditorTXT
 
         private void mEditarCopiar_Click(object sender, EventArgs e)
         {
-
+            txtConteudo.Copy();
         }
 
         private void mEditarColar_Click(object sender, EventArgs e)
