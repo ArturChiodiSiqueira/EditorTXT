@@ -221,5 +221,17 @@ namespace EditorTXT
             txtConteudo.SelectionStart = index + dataHora.Length;
         }
         #endregion
+
+        #region Menu Formatar
+        private void mFormatarQuebraLinha_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mFormatarFonte_Click(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
     }
 }

@@ -169,59 +169,59 @@
             // mEditarDesfazer
             // 
             this.mEditarDesfazer.Name = "mEditarDesfazer";
-            this.mEditarDesfazer.Size = new System.Drawing.Size(224, 32);
+            this.mEditarDesfazer.Size = new System.Drawing.Size(206, 32);
             this.mEditarDesfazer.Text = "Desfazer";
             this.mEditarDesfazer.Click += new System.EventHandler(this.mEditarDesfazer_Click);
             // 
             // mEditarRefazer
             // 
             this.mEditarRefazer.Name = "mEditarRefazer";
-            this.mEditarRefazer.Size = new System.Drawing.Size(224, 32);
+            this.mEditarRefazer.Size = new System.Drawing.Size(206, 32);
             this.mEditarRefazer.Text = "Refazer";
             this.mEditarRefazer.Click += new System.EventHandler(this.mEditarRefazer_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(203, 6);
             // 
             // mEditarRecortar
             // 
             this.mEditarRecortar.Name = "mEditarRecortar";
-            this.mEditarRecortar.Size = new System.Drawing.Size(224, 32);
+            this.mEditarRecortar.Size = new System.Drawing.Size(206, 32);
             this.mEditarRecortar.Text = "Recortar";
             this.mEditarRecortar.Click += new System.EventHandler(this.mEditarRecortar_Click);
             // 
             // mEditarCopiar
             // 
             this.mEditarCopiar.Name = "mEditarCopiar";
-            this.mEditarCopiar.Size = new System.Drawing.Size(224, 32);
+            this.mEditarCopiar.Size = new System.Drawing.Size(206, 32);
             this.mEditarCopiar.Text = "Copiar";
             this.mEditarCopiar.Click += new System.EventHandler(this.mEditarCopiar_Click);
             // 
             // mEditarColar
             // 
             this.mEditarColar.Name = "mEditarColar";
-            this.mEditarColar.Size = new System.Drawing.Size(224, 32);
+            this.mEditarColar.Size = new System.Drawing.Size(206, 32);
             this.mEditarColar.Text = "Colar";
             this.mEditarColar.Click += new System.EventHandler(this.mEditarColar_Click);
             // 
             // mEditarExcluir
             // 
             this.mEditarExcluir.Name = "mEditarExcluir";
-            this.mEditarExcluir.Size = new System.Drawing.Size(224, 32);
+            this.mEditarExcluir.Size = new System.Drawing.Size(206, 32);
             this.mEditarExcluir.Text = "Excluir";
             this.mEditarExcluir.Click += new System.EventHandler(this.mEditarExcluir_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(203, 6);
             // 
             // mEditarDataEHora
             // 
             this.mEditarDataEHora.Name = "mEditarDataEHora";
-            this.mEditarDataEHora.Size = new System.Drawing.Size(224, 32);
+            this.mEditarDataEHora.Size = new System.Drawing.Size(206, 32);
             this.mEditarDataEHora.Text = "Data e Hora";
             this.mEditarDataEHora.Click += new System.EventHandler(this.mEditarDataEHora_Click);
             // 
@@ -239,12 +239,14 @@
             this.mFormatarQuebraLinha.Name = "mFormatarQuebraLinha";
             this.mFormatarQuebraLinha.Size = new System.Drawing.Size(358, 32);
             this.mFormatarQuebraLinha.Text = "Quebra Automática de Linha";
+            this.mFormatarQuebraLinha.Click += new System.EventHandler(this.mFormatarQuebraLinha_Click);
             // 
             // mFormatarFonte
             // 
             this.mFormatarFonte.Name = "mFormatarFonte";
             this.mFormatarFonte.Size = new System.Drawing.Size(358, 32);
             this.mFormatarFonte.Text = "Fonte";
+            this.mFormatarFonte.Click += new System.EventHandler(this.mFormatarFonte_Click);
             // 
             // mExibir
             // 
