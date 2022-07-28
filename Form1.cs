@@ -193,7 +193,32 @@ namespace EditorTXT
 
         private void mEditarDataEHora_Click(object sender, EventArgs e)
         {
+            int index = txtConteudo.SelectionStart;
+            string dataHora = DateTime.Now.ToString();
 
+            if (txtConteudo.SelectionStart == txtConteudo.Text.Length)
+            {
+                txtConteudo.Text = txtConteudo.Text + dataHora;
+                txtConteudo.SelectionStart = index + dataHora.Length;
+                return;
+            }
+
+            string temp = "";
+            for (int i = 0; i < txtConteudo.Text.Length; i++)
+            {
+                if (i == txtConteudo.SelectionStart)
+                {
+                    temp += dataHora;
+                    temp += txtConteudo.Text[i];
+                }
+                else
+                {
+                    temp += txtConteudo.Text[i];
+                }
+            }
+
+            txtConteudo.Text = temp;
+            txtConteudo.SelectionStart = index + dataHora.Length;
         }
         #endregion
     }
