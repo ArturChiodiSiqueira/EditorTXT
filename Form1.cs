@@ -251,21 +251,29 @@ namespace EditorTXT
         private void mExibirZoomAmpliar_Click(object sender, EventArgs e)
         {
             txtConteudo.ZoomFactor += 0.1f;
+            AtualizaZoomStatusBar(txtConteudo.ZoomFactor);
         }
 
         private void mExibirZoomReduzir_Click(object sender, EventArgs e)
         {
             txtConteudo.ZoomFactor -= 0.1f;
+            AtualizaZoomStatusBar(txtConteudo.ZoomFactor);
         }
 
         private void mExibirZoomRestaurar_Click(object sender, EventArgs e)
         {
             txtConteudo.ZoomFactor = 1f;
+            AtualizaZoomStatusBar(txtConteudo.ZoomFactor);
         }
 
         private void mExibirBarraStatus_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void AtualizaZoomStatusBar(float zoom)
+        {
+            statusBarLabel.Text = $"{Math.Round(zoom * 100)}%";
         }
         #endregion
     }
