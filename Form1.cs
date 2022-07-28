@@ -268,7 +268,7 @@ namespace EditorTXT
 
         private void mExibirBarraStatus_Click(object sender, EventArgs e)
         {
-
+            statusBar.Visible = mExibirBarraStatus.Checked;
         }
 
         private void AtualizaZoomStatusBar(float zoom)
