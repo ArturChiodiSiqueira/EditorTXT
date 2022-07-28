@@ -101,52 +101,52 @@
             // mArquivoNovo
             // 
             this.mArquivoNovo.Name = "mArquivoNovo";
-            this.mArquivoNovo.Size = new System.Drawing.Size(224, 32);
+            this.mArquivoNovo.Size = new System.Drawing.Size(211, 32);
             this.mArquivoNovo.Text = "Novo";
             this.mArquivoNovo.Click += new System.EventHandler(this.mArquivoNovo_Click);
             // 
             // mArquivoNovaJanela
             // 
             this.mArquivoNovaJanela.Name = "mArquivoNovaJanela";
-            this.mArquivoNovaJanela.Size = new System.Drawing.Size(224, 32);
+            this.mArquivoNovaJanela.Size = new System.Drawing.Size(211, 32);
             this.mArquivoNovaJanela.Text = "Nova Janela";
             this.mArquivoNovaJanela.Click += new System.EventHandler(this.mArquivoNovaJanela_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(208, 6);
             // 
             // mArquivoAbrir
             // 
             this.mArquivoAbrir.Name = "mArquivoAbrir";
-            this.mArquivoAbrir.Size = new System.Drawing.Size(224, 32);
+            this.mArquivoAbrir.Size = new System.Drawing.Size(211, 32);
             this.mArquivoAbrir.Text = "Abrir";
             this.mArquivoAbrir.Click += new System.EventHandler(this.mArquivoAbrir_Click);
             // 
             // mArquivoSalvar
             // 
             this.mArquivoSalvar.Name = "mArquivoSalvar";
-            this.mArquivoSalvar.Size = new System.Drawing.Size(224, 32);
+            this.mArquivoSalvar.Size = new System.Drawing.Size(211, 32);
             this.mArquivoSalvar.Text = "Salvar";
             this.mArquivoSalvar.Click += new System.EventHandler(this.mArquivoSalvar_Click);
             // 
             // mArquivoSalvarComo
             // 
             this.mArquivoSalvarComo.Name = "mArquivoSalvarComo";
-            this.mArquivoSalvarComo.Size = new System.Drawing.Size(224, 32);
+            this.mArquivoSalvarComo.Size = new System.Drawing.Size(211, 32);
             this.mArquivoSalvarComo.Text = "Salvar Como";
             this.mArquivoSalvarComo.Click += new System.EventHandler(this.mArquivoSalvarComo_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(208, 6);
             // 
             // mArquivoSair
             // 
             this.mArquivoSair.Name = "mArquivoSair";
-            this.mArquivoSair.Size = new System.Drawing.Size(224, 32);
+            this.mArquivoSair.Size = new System.Drawing.Size(211, 32);
             this.mArquivoSair.Text = "Sair";
             this.mArquivoSair.Click += new System.EventHandler(this.mArquivoSair_Click);
             // 
@@ -169,54 +169,61 @@
             // mEditarDesfazer
             // 
             this.mEditarDesfazer.Name = "mEditarDesfazer";
-            this.mEditarDesfazer.Size = new System.Drawing.Size(206, 32);
+            this.mEditarDesfazer.Size = new System.Drawing.Size(224, 32);
             this.mEditarDesfazer.Text = "Desfazer";
+            this.mEditarDesfazer.Click += new System.EventHandler(this.mEditarDesfazer_Click);
             // 
             // mEditarRefazer
             // 
             this.mEditarRefazer.Name = "mEditarRefazer";
-            this.mEditarRefazer.Size = new System.Drawing.Size(206, 32);
+            this.mEditarRefazer.Size = new System.Drawing.Size(224, 32);
             this.mEditarRefazer.Text = "Refazer";
+            this.mEditarRefazer.Click += new System.EventHandler(this.mEditarRefazer_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(203, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(221, 6);
             // 
             // mEditarRecortar
             // 
             this.mEditarRecortar.Name = "mEditarRecortar";
-            this.mEditarRecortar.Size = new System.Drawing.Size(206, 32);
+            this.mEditarRecortar.Size = new System.Drawing.Size(224, 32);
             this.mEditarRecortar.Text = "Recortar";
+            this.mEditarRecortar.Click += new System.EventHandler(this.mEditarRecortar_Click);
             // 
             // mEditarCopiar
             // 
             this.mEditarCopiar.Name = "mEditarCopiar";
-            this.mEditarCopiar.Size = new System.Drawing.Size(206, 32);
+            this.mEditarCopiar.Size = new System.Drawing.Size(224, 32);
             this.mEditarCopiar.Text = "Copiar";
+            this.mEditarCopiar.Click += new System.EventHandler(this.mEditarCopiar_Click);
             // 
             // mEditarColar
             // 
             this.mEditarColar.Name = "mEditarColar";
-            this.mEditarColar.Size = new System.Drawing.Size(206, 32);
+            this.mEditarColar.Size = new System.Drawing.Size(224, 32);
             this.mEditarColar.Text = "Colar";
+            this.mEditarColar.Click += new System.EventHandler(this.mEditarColar_Click);
             // 
             // mEditarExcluir
             // 
             this.mEditarExcluir.Name = "mEditarExcluir";
-            this.mEditarExcluir.Size = new System.Drawing.Size(206, 32);
+            this.mEditarExcluir.Size = new System.Drawing.Size(224, 32);
             this.mEditarExcluir.Text = "Excluir";
+            this.mEditarExcluir.Click += new System.EventHandler(this.mEditarExcluir_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(203, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(221, 6);
             // 
             // mEditarDataEHora
             // 
             this.mEditarDataEHora.Name = "mEditarDataEHora";
-            this.mEditarDataEHora.Size = new System.Drawing.Size(206, 32);
+            this.mEditarDataEHora.Size = new System.Drawing.Size(224, 32);
             this.mEditarDataEHora.Text = "Data e Hora";
+            this.mEditarDataEHora.Click += new System.EventHandler(this.mEditarDataEHora_Click);
             // 
             // mFormatar
             // 

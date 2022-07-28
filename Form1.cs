@@ -153,11 +153,48 @@ namespace EditorTXT
                 Application.Exit();
             }
         }
-        #endregion
 
         private void txtConteudo_TextChanged(object sender, EventArgs e)
         {
             mArquivoSalvar.Enabled = true;
         }
+        #endregion
+
+        #region Menu Editar
+        private void mEditarDesfazer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mEditarRefazer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mEditarRecortar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mEditarCopiar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mEditarColar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mEditarExcluir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mEditarDataEHora_Click(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
     }
 }
