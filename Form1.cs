@@ -246,5 +246,27 @@ namespace EditorTXT
             }
         }
         #endregion
+
+        #region Menu Exibir
+        private void mExibirZoomAmpliar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mExibirZoomReduzir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mExibirZoomRestaurar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mExibirBarraStatus_Click(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
     }
 }

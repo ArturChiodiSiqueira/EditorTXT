@@ -271,20 +271,23 @@
             // mExibirZoomAmpliar
             // 
             this.mExibirZoomAmpliar.Name = "mExibirZoomAmpliar";
-            this.mExibirZoomAmpliar.Size = new System.Drawing.Size(182, 32);
+            this.mExibirZoomAmpliar.Size = new System.Drawing.Size(224, 32);
             this.mExibirZoomAmpliar.Text = "Ampliar";
+            this.mExibirZoomAmpliar.Click += new System.EventHandler(this.mExibirZoomAmpliar_Click);
             // 
             // mExibirZoomReduzir
             // 
             this.mExibirZoomReduzir.Name = "mExibirZoomReduzir";
-            this.mExibirZoomReduzir.Size = new System.Drawing.Size(182, 32);
+            this.mExibirZoomReduzir.Size = new System.Drawing.Size(224, 32);
             this.mExibirZoomReduzir.Text = "Reduzir";
+            this.mExibirZoomReduzir.Click += new System.EventHandler(this.mExibirZoomReduzir_Click);
             // 
             // mExibirZoomRestaurar
             // 
             this.mExibirZoomRestaurar.Name = "mExibirZoomRestaurar";
-            this.mExibirZoomRestaurar.Size = new System.Drawing.Size(182, 32);
+            this.mExibirZoomRestaurar.Size = new System.Drawing.Size(224, 32);
             this.mExibirZoomRestaurar.Text = "Restaurar";
+            this.mExibirZoomRestaurar.Click += new System.EventHandler(this.mExibirZoomRestaurar_Click);
             // 
             // mExibirBarraStatus
             // 
@@ -294,6 +297,7 @@
             this.mExibirBarraStatus.Name = "mExibirBarraStatus";
             this.mExibirBarraStatus.Size = new System.Drawing.Size(234, 32);
             this.mExibirBarraStatus.Text = "Barra de Status";
+            this.mExibirBarraStatus.Click += new System.EventHandler(this.mExibirBarraStatus_Click);
             // 
             // mAjuda
             // 
