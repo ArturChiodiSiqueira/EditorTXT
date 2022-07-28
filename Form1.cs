@@ -250,17 +250,17 @@ namespace EditorTXT
         #region Menu Exibir
         private void mExibirZoomAmpliar_Click(object sender, EventArgs e)
         {
-
+            txtConteudo.ZoomFactor += 0.1f;
         }
 
         private void mExibirZoomReduzir_Click(object sender, EventArgs e)
         {
-
+            txtConteudo.ZoomFactor -= 0.1f;
         }
 
         private void mExibirZoomRestaurar_Click(object sender, EventArgs e)
         {
-
+            txtConteudo.ZoomFactor = 1f;
         }
 
         private void mExibirBarraStatus_Click(object sender, EventArgs e)
