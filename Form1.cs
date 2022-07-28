@@ -183,7 +183,7 @@ namespace EditorTXT
 
         private void mEditarColar_Click(object sender, EventArgs e)
         {
-
+            txtConteudo.Paste();
         }
 
         private void mEditarExcluir_Click(object sender, EventArgs e)
