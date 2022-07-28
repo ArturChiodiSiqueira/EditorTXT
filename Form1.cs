@@ -280,7 +280,8 @@ namespace EditorTXT
         #region Menu Ajuda
         private void mAjudaExibirAjuda_Click(object sender, EventArgs e)
         {
-
+            FormAjuda f = new FormAjuda();
+            f.Show();
         }
 
         private void mAjudaSobre_Click(object sender, EventArgs e)

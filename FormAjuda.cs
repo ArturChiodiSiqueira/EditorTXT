@@ -15,7 +15,7 @@ namespace EditorTXT
         public FormAjuda()
         {
             InitializeComponent();
-            webBrowser.Navigate("Http://www.googlo.com");
+            webBrowser.Navigate("Http://www.google.com");
         }
     }
 }
