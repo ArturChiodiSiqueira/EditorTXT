@@ -276,5 +276,17 @@ namespace EditorTXT
             statusBarLabel.Text = $"{Math.Round(zoom * 100)}%";
         }
         #endregion
+
+        #region Menu Ajuda
+        private void mAjudaExibirAjuda_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mAjudaSobre_Click(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
     }
 }

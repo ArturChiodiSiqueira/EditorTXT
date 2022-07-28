@@ -271,21 +271,21 @@
             // mExibirZoomAmpliar
             // 
             this.mExibirZoomAmpliar.Name = "mExibirZoomAmpliar";
-            this.mExibirZoomAmpliar.Size = new System.Drawing.Size(224, 32);
+            this.mExibirZoomAmpliar.Size = new System.Drawing.Size(182, 32);
             this.mExibirZoomAmpliar.Text = "Ampliar";
             this.mExibirZoomAmpliar.Click += new System.EventHandler(this.mExibirZoomAmpliar_Click);
             // 
             // mExibirZoomReduzir
             // 
             this.mExibirZoomReduzir.Name = "mExibirZoomReduzir";
-            this.mExibirZoomReduzir.Size = new System.Drawing.Size(224, 32);
+            this.mExibirZoomReduzir.Size = new System.Drawing.Size(182, 32);
             this.mExibirZoomReduzir.Text = "Reduzir";
             this.mExibirZoomReduzir.Click += new System.EventHandler(this.mExibirZoomReduzir_Click);
             // 
             // mExibirZoomRestaurar
             // 
             this.mExibirZoomRestaurar.Name = "mExibirZoomRestaurar";
-            this.mExibirZoomRestaurar.Size = new System.Drawing.Size(224, 32);
+            this.mExibirZoomRestaurar.Size = new System.Drawing.Size(182, 32);
             this.mExibirZoomRestaurar.Text = "Restaurar";
             this.mExibirZoomRestaurar.Click += new System.EventHandler(this.mExibirZoomRestaurar_Click);
             // 
@@ -313,12 +313,14 @@
             this.mAjudaExibirAjuda.Name = "mAjudaExibirAjuda";
             this.mAjudaExibirAjuda.Size = new System.Drawing.Size(228, 32);
             this.mAjudaExibirAjuda.Text = "Exibir Ajuda";
+            this.mAjudaExibirAjuda.Click += new System.EventHandler(this.mAjudaExibirAjuda_Click);
             // 
             // mAjudaSobre
             // 
             this.mAjudaSobre.Name = "mAjudaSobre";
             this.mAjudaSobre.Size = new System.Drawing.Size(228, 32);
             this.mAjudaSobre.Text = "Sobre o Editor";
+            this.mAjudaSobre.Click += new System.EventHandler(this.mAjudaSobre_Click);
             // 
             // statusBar
             // 
