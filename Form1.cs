@@ -34,7 +34,42 @@ namespace EditorTXT
 
         private void mArquivoAbrir_Click(object sender, EventArgs e)
         {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Title = "Abrir...";
+            dialog.Filter = "rich text file|*.rtf|texto|*.txt|todos|*.*";
 
+            DialogResult result = dialog.ShowDialog();
+
+            if (result != DialogResult.Cancel && result != DialogResult.Abort)
+            {
+                if (File.Exists(dialog.FileName))
+                {
+                    FileInfo file = new FileInfo(dialog.FileName);
+                    Text = Application.ProductName + " - " + file.Name;
+
+                    Gerenciador.FolderPath = file.DirectoryName + "\\";
+                    Gerenciador.FileName = file.Name.Remove(file.Name.LastIndexOf("."));
+                    Gerenciador.FileExt = file.Extension;
+
+                    // objeto responsavel por ler o arquvo
+                    StreamReader stream = null;
+
+                    try
+                    {
+                        stream = new StreamReader(file.FullName, true);
+
+                        txtConteudo.Text = stream.ReadToEnd();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Formato de arquivo não suportado.\n" + ex.Message);
+                    }
+                    finally
+                    {
+                        stream.Close();
+                    }
+                }
+            }
         }
 
         private void mArquivoSalvar_Click(object sender, EventArgs e)
