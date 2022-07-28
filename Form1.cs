@@ -163,7 +163,7 @@ namespace EditorTXT
         #region Menu Editar
         private void mEditarDesfazer_Click(object sender, EventArgs e)
         {
-
+            txtConteudo.Undo();
         }
 
         private void mEditarRefazer_Click(object sender, EventArgs e)
