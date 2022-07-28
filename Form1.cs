@@ -23,6 +23,8 @@ namespace EditorTXT
         private void mArquivoNovo_Click(object sender, EventArgs e)
         {
             txtConteudo.Clear();
+            mArquivoSalvar.Enabled = true;
+            Text = Application.ProductName;
         }
 
         private void mArquivoNovaJanela_Click(object sender, EventArgs e)
@@ -59,6 +61,8 @@ namespace EditorTXT
                         stream = new StreamReader(file.FullName, true);
 
                         txtConteudo.Text = stream.ReadToEnd();
+
+                        mArquivoSalvar.Enabled = true;
                     }
                     catch (Exception ex)
                     {
@@ -125,6 +129,8 @@ namespace EditorTXT
                 Gerenciador.FolderPath = file.DirectoryName + "\\";
                 Gerenciador.FileName = file.Name.Remove(file.Name.LastIndexOf("."));
                 Gerenciador.FileExt = file.Extension;
+
+                mArquivoSalvar.Enabled = false;   //Se ja estiver salvo, não salvar novamente
             }
             catch (Exception ex)
             {
