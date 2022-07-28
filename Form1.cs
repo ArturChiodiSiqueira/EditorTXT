@@ -130,6 +130,8 @@ namespace EditorTXT
                 Gerenciador.FileName = file.Name.Remove(file.Name.LastIndexOf("."));
                 Gerenciador.FileExt = file.Extension;
 
+                Text = Application.ProductName + " - " + file.Name;
+
                 mArquivoSalvar.Enabled = false;   //Se ja estiver salvo, não salvar novamente
             }
             catch (Exception ex)
@@ -152,5 +154,10 @@ namespace EditorTXT
             }
         }
         #endregion
+
+        private void txtConteudo_TextChanged(object sender, EventArgs e)
+        {
+            mArquivoSalvar.Enabled = true;
+        }
     }
 }
