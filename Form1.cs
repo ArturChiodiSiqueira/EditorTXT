@@ -173,7 +173,7 @@ namespace EditorTXT
 
         private void mEditarRecortar_Click(object sender, EventArgs e)
         {
-
+            txtConteudo.Cut();
         }
 
         private void mEditarCopiar_Click(object sender, EventArgs e)
