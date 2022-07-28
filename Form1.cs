@@ -168,7 +168,7 @@ namespace EditorTXT
 
         private void mEditarRefazer_Click(object sender, EventArgs e)
         {
-
+            txtConteudo.Redo();
         }
 
         private void mEditarRecortar_Click(object sender, EventArgs e)
