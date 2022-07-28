@@ -225,7 +225,7 @@ namespace EditorTXT
         #region Menu Formatar
         private void mFormatarQuebraLinha_Click(object sender, EventArgs e)
         {
-
+            txtConteudo.WordWrap = mFormatarQuebraLinha.Checked;
         }
 
         private void mFormatarFonte_Click(object sender, EventArgs e)
@@ -235,3 +235,4 @@ namespace EditorTXT
         #endregion
     }
 }
+ 

@@ -236,6 +236,7 @@
             // 
             // mFormatarQuebraLinha
             // 
+            this.mFormatarQuebraLinha.CheckOnClick = true;
             this.mFormatarQuebraLinha.Name = "mFormatarQuebraLinha";
             this.mFormatarQuebraLinha.Size = new System.Drawing.Size(358, 32);
             this.mFormatarQuebraLinha.Text = "Quebra Automática de Linha";
@@ -340,6 +341,7 @@
             this.txtConteudo.Size = new System.Drawing.Size(782, 491);
             this.txtConteudo.TabIndex = 2;
             this.txtConteudo.Text = "";
+            this.txtConteudo.WordWrap = false;
             this.txtConteudo.TextChanged += new System.EventHandler(this.txtConteudo_TextChanged);
             // 
             // Form1
