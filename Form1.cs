@@ -188,7 +188,7 @@ namespace EditorTXT
 
         private void mEditarExcluir_Click(object sender, EventArgs e)
         {
-
+            txtConteudo.Text = txtConteudo.Text.Remove(txtConteudo.SelectionStart, txtConteudo.SelectedText.Length);
         }
 
         private void mEditarDataEHora_Click(object sender, EventArgs e)
