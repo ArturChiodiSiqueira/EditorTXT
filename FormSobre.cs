@@ -17,7 +17,7 @@ namespace EditorTXT
             InitializeComponent();
             WebBrowser webBrowser = new WebBrowser();
             webBrowser.Dock = DockStyle.Fill;
-            webBrowser.Navigate(Application.StartupPath + @"Sobre");
+            webBrowser.Navigate(Application.StartupPath + @"Sobre\message.txt");
             this.Controls.Add(webBrowser);
         }
     }
