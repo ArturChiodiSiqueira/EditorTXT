@@ -286,7 +286,8 @@ namespace EditorTXT
 
         private void mAjudaSobre_Click(object sender, EventArgs e)
         {
-
+            FormSobre f = new FormSobre();
+            f.Show();
         }
         #endregion
     }

@@ -1,6 +1,6 @@
 ﻿namespace EditorTXT
 {
-    partial class FormAjuda
+    partial class FormSobre
     {
         /// <summary>
         /// Required designer variable.
@@ -28,37 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.webBrowser = new System.Windows.Forms.WebBrowser();
-            this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.SuspendLayout();
             // 
-            // webBrowser
-            // 
-            this.webBrowser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webBrowser.Location = new System.Drawing.Point(0, 0);
-            this.webBrowser.Name = "webBrowser";
-            this.webBrowser.Size = new System.Drawing.Size(800, 450);
-            this.webBrowser.TabIndex = 0;
-            // 
-            // printDialog1
-            // 
-            this.printDialog1.UseEXDialog = true;
-            // 
-            // FormAjuda
+            // FormSobre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.webBrowser);
-            this.Name = "FormAjuda";
-            this.Text = "Ajuda do Editor";
+            this.Name = "FormSobre";
+            this.Text = "Sobre o Editor";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.WebBrowser webBrowser;
-        private System.Windows.Forms.PrintDialog printDialog1;
     }
 }
