@@ -100,6 +100,7 @@
             // 
             // mArquivoNovo
             // 
+            this.mArquivoNovo.Image = global::EditorTXT.Properties.Resources.new_document;
             this.mArquivoNovo.Name = "mArquivoNovo";
             this.mArquivoNovo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
             this.mArquivoNovo.Size = new System.Drawing.Size(335, 32);
@@ -108,6 +109,7 @@
             // 
             // mArquivoNovaJanela
             // 
+            this.mArquivoNovaJanela.Image = global::EditorTXT.Properties.Resources.notes;
             this.mArquivoNovaJanela.Name = "mArquivoNovaJanela";
             this.mArquivoNovaJanela.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.N)));
@@ -122,6 +124,7 @@
             // 
             // mArquivoAbrir
             // 
+            this.mArquivoAbrir.Image = global::EditorTXT.Properties.Resources.folder;
             this.mArquivoAbrir.Name = "mArquivoAbrir";
             this.mArquivoAbrir.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.mArquivoAbrir.Size = new System.Drawing.Size(335, 32);
@@ -130,6 +133,7 @@
             // 
             // mArquivoSalvar
             // 
+            this.mArquivoSalvar.Image = global::EditorTXT.Properties.Resources.save;
             this.mArquivoSalvar.Name = "mArquivoSalvar";
             this.mArquivoSalvar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.mArquivoSalvar.Size = new System.Drawing.Size(335, 32);
@@ -138,6 +142,7 @@
             // 
             // mArquivoSalvarComo
             // 
+            this.mArquivoSalvarComo.Image = global::EditorTXT.Properties.Resources.save;
             this.mArquivoSalvarComo.Name = "mArquivoSalvarComo";
             this.mArquivoSalvarComo.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.S)));
@@ -152,6 +157,7 @@
             // 
             // mArquivoSair
             // 
+            this.mArquivoSair.Image = global::EditorTXT.Properties.Resources.exit;
             this.mArquivoSair.Name = "mArquivoSair";
             this.mArquivoSair.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.mArquivoSair.Size = new System.Drawing.Size(335, 32);
@@ -213,6 +219,7 @@
             // 
             // mEditarColar
             // 
+            this.mEditarColar.Image = global::EditorTXT.Properties.Resources.text;
             this.mEditarColar.Name = "mEditarColar";
             this.mEditarColar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
             this.mEditarColar.Size = new System.Drawing.Size(245, 32);
@@ -279,12 +286,14 @@
             this.mExibirZoomAmpliar,
             this.mExibirZoomReduzir,
             this.mExibirZoomRestaurar});
+            this.mExibirZoom.Image = global::EditorTXT.Properties.Resources.zoom1;
             this.mExibirZoom.Name = "mExibirZoom";
             this.mExibirZoom.Size = new System.Drawing.Size(234, 32);
             this.mExibirZoom.Text = "Zoom";
             // 
             // mExibirZoomAmpliar
             // 
+            this.mExibirZoomAmpliar.Image = global::EditorTXT.Properties.Resources.zoom;
             this.mExibirZoomAmpliar.Name = "mExibirZoomAmpliar";
             this.mExibirZoomAmpliar.ShortcutKeyDisplayString = "Ctrl+adição";
             this.mExibirZoomAmpliar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Oemplus)));
@@ -294,6 +303,7 @@
             // 
             // mExibirZoomReduzir
             // 
+            this.mExibirZoomReduzir.Image = global::EditorTXT.Properties.Resources.zoom;
             this.mExibirZoomReduzir.Name = "mExibirZoomReduzir";
             this.mExibirZoomReduzir.ShortcutKeyDisplayString = "Ctrl+sibtração";
             this.mExibirZoomReduzir.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.OemMinus)));
@@ -330,6 +340,7 @@
             // 
             // mAjudaExibirAjuda
             // 
+            this.mAjudaExibirAjuda.Image = global::EditorTXT.Properties.Resources.help;
             this.mAjudaExibirAjuda.Name = "mAjudaExibirAjuda";
             this.mAjudaExibirAjuda.ShortcutKeys = System.Windows.Forms.Keys.F1;
             this.mAjudaExibirAjuda.Size = new System.Drawing.Size(235, 32);
