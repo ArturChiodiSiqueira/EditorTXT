@@ -101,52 +101,60 @@
             // mArquivoNovo
             // 
             this.mArquivoNovo.Name = "mArquivoNovo";
-            this.mArquivoNovo.Size = new System.Drawing.Size(211, 32);
+            this.mArquivoNovo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.mArquivoNovo.Size = new System.Drawing.Size(335, 32);
             this.mArquivoNovo.Text = "Novo";
             this.mArquivoNovo.Click += new System.EventHandler(this.mArquivoNovo_Click);
             // 
             // mArquivoNovaJanela
             // 
             this.mArquivoNovaJanela.Name = "mArquivoNovaJanela";
-            this.mArquivoNovaJanela.Size = new System.Drawing.Size(211, 32);
+            this.mArquivoNovaJanela.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.N)));
+            this.mArquivoNovaJanela.Size = new System.Drawing.Size(335, 32);
             this.mArquivoNovaJanela.Text = "Nova Janela";
             this.mArquivoNovaJanela.Click += new System.EventHandler(this.mArquivoNovaJanela_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(208, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(332, 6);
             // 
             // mArquivoAbrir
             // 
             this.mArquivoAbrir.Name = "mArquivoAbrir";
-            this.mArquivoAbrir.Size = new System.Drawing.Size(211, 32);
+            this.mArquivoAbrir.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.mArquivoAbrir.Size = new System.Drawing.Size(335, 32);
             this.mArquivoAbrir.Text = "Abrir";
             this.mArquivoAbrir.Click += new System.EventHandler(this.mArquivoAbrir_Click);
             // 
             // mArquivoSalvar
             // 
             this.mArquivoSalvar.Name = "mArquivoSalvar";
-            this.mArquivoSalvar.Size = new System.Drawing.Size(211, 32);
+            this.mArquivoSalvar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.mArquivoSalvar.Size = new System.Drawing.Size(335, 32);
             this.mArquivoSalvar.Text = "Salvar";
             this.mArquivoSalvar.Click += new System.EventHandler(this.mArquivoSalvar_Click);
             // 
             // mArquivoSalvarComo
             // 
             this.mArquivoSalvarComo.Name = "mArquivoSalvarComo";
-            this.mArquivoSalvarComo.Size = new System.Drawing.Size(211, 32);
+            this.mArquivoSalvarComo.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.S)));
+            this.mArquivoSalvarComo.Size = new System.Drawing.Size(335, 32);
             this.mArquivoSalvarComo.Text = "Salvar Como";
             this.mArquivoSalvarComo.Click += new System.EventHandler(this.mArquivoSalvarComo_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(208, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(332, 6);
             // 
             // mArquivoSair
             // 
             this.mArquivoSair.Name = "mArquivoSair";
-            this.mArquivoSair.Size = new System.Drawing.Size(211, 32);
+            this.mArquivoSair.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
+            this.mArquivoSair.Size = new System.Drawing.Size(335, 32);
             this.mArquivoSair.Text = "Sair";
             this.mArquivoSair.Click += new System.EventHandler(this.mArquivoSair_Click);
             // 
