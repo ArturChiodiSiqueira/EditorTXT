@@ -63,6 +63,7 @@
             this.mAjudaSobre = new System.Windows.Forms.ToolStripMenuItem();
             this.statusBar = new System.Windows.Forms.StatusStrip();
             this.statusBarLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.txtConteudo = new System.Windows.Forms.RichTextBox();
             this.menuBar.SuspendLayout();
             this.statusBar.SuspendLayout();
@@ -372,16 +373,24 @@
             this.statusBarLabel.Size = new System.Drawing.Size(49, 20);
             this.statusBarLabel.Text = "100 %";
             // 
+            // toolStrip1
+            // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 36);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(782, 25);
+            this.toolStrip1.TabIndex = 3;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
             // txtConteudo
             // 
             this.txtConteudo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtConteudo.Location = new System.Drawing.Point(0, 36);
+            this.txtConteudo.Location = new System.Drawing.Point(0, 61);
             this.txtConteudo.Name = "txtConteudo";
-            this.txtConteudo.Size = new System.Drawing.Size(782, 491);
-            this.txtConteudo.TabIndex = 2;
+            this.txtConteudo.Size = new System.Drawing.Size(782, 466);
+            this.txtConteudo.TabIndex = 4;
             this.txtConteudo.Text = "";
             this.txtConteudo.WordWrap = false;
-            this.txtConteudo.TextChanged += new System.EventHandler(this.txtConteudo_TextChanged);
             // 
             // Form1
             // 
@@ -389,6 +398,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 553);
             this.Controls.Add(this.txtConteudo);
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.statusBar);
             this.Controls.Add(this.menuBar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -441,6 +451,7 @@
         private System.Windows.Forms.ToolStripMenuItem mAjudaSobre;
         private System.Windows.Forms.StatusStrip statusBar;
         private System.Windows.Forms.ToolStripStatusLabel statusBarLabel;
+        private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.RichTextBox txtConteudo;
     }
 }
