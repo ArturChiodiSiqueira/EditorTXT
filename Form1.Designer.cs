@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuBar = new System.Windows.Forms.MenuStrip();
             this.mArquivo = new System.Windows.Forms.ToolStripMenuItem();
             this.mArquivoNovo = new System.Windows.Forms.ToolStripMenuItem();
@@ -199,7 +200,7 @@
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(203, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(242, 6);
             // 
             // mEditarRecortar
             // 
@@ -237,7 +238,7 @@
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(203, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(242, 6);
             // 
             // mEditarDataEHora
             // 
@@ -350,7 +351,7 @@
             // mAjudaSobre
             // 
             this.mAjudaSobre.Name = "mAjudaSobre";
-            this.mAjudaSobre.Size = new System.Drawing.Size(228, 32);
+            this.mAjudaSobre.Size = new System.Drawing.Size(235, 32);
             this.mAjudaSobre.Text = "Sobre o Editor";
             this.mAjudaSobre.Click += new System.EventHandler(this.mAjudaSobre_Click);
             // 
@@ -390,6 +391,7 @@
             this.Controls.Add(this.txtConteudo);
             this.Controls.Add(this.statusBar);
             this.Controls.Add(this.menuBar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuBar;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
