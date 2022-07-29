@@ -64,17 +64,17 @@
             this.statusBar = new System.Windows.Forms.StatusStrip();
             this.statusBarLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.toolBarNovo = new System.Windows.Forms.ToolStripButton();
+            this.toolBarAbrir = new System.Windows.Forms.ToolStripButton();
+            this.toolBarSalvar = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
+            this.toolBarFonte = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
+            this.toolBarZoomMenos = new System.Windows.Forms.ToolStripButton();
+            this.toolBarZoom = new System.Windows.Forms.ToolStripButton();
+            this.toolBarZoomMais = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton9 = new System.Windows.Forms.ToolStripButton();
+            this.toolBarAjuda = new System.Windows.Forms.ToolStripButton();
             this.txtConteudo = new System.Windows.Forms.RichTextBox();
             this.menuBar.SuspendLayout();
             this.statusBar.SuspendLayout();
@@ -389,116 +389,124 @@
             // 
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
-            this.toolStripButton2,
-            this.toolStripButton3,
+            this.toolBarNovo,
+            this.toolBarAbrir,
+            this.toolBarSalvar,
             this.toolStripSeparator5,
-            this.toolStripButton5,
+            this.toolBarFonte,
             this.toolStripSeparator6,
-            this.toolStripButton6,
-            this.toolStripButton8,
-            this.toolStripButton7,
+            this.toolBarZoomMenos,
+            this.toolBarZoom,
+            this.toolBarZoomMais,
             this.toolStripSeparator7,
-            this.toolStripButton9});
+            this.toolBarAjuda});
             this.toolStrip1.Location = new System.Drawing.Point(0, 36);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(782, 35);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripButton1
+            // toolBarNovo
             // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::EditorTXT.Properties.Resources.new_document;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(29, 32);
-            this.toolStripButton1.Text = "Novo";
+            this.toolBarNovo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolBarNovo.Image = global::EditorTXT.Properties.Resources.new_document;
+            this.toolBarNovo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolBarNovo.Name = "toolBarNovo";
+            this.toolBarNovo.Size = new System.Drawing.Size(29, 32);
+            this.toolBarNovo.Text = "Novo";
+            this.toolBarNovo.Click += new System.EventHandler(this.mArquivoNovo_Click);
             // 
-            // toolStripButton2
+            // toolBarAbrir
             // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = global::EditorTXT.Properties.Resources.folder;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(29, 32);
-            this.toolStripButton2.Text = "Abrir";
+            this.toolBarAbrir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolBarAbrir.Image = global::EditorTXT.Properties.Resources.folder;
+            this.toolBarAbrir.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolBarAbrir.Name = "toolBarAbrir";
+            this.toolBarAbrir.Size = new System.Drawing.Size(29, 32);
+            this.toolBarAbrir.Text = "Abrir";
+            this.toolBarAbrir.Click += new System.EventHandler(this.mArquivoAbrir_Click);
             // 
-            // toolStripButton3
+            // toolBarSalvar
             // 
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = global::EditorTXT.Properties.Resources.save;
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(29, 32);
-            this.toolStripButton3.Text = "Salvar";
+            this.toolBarSalvar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolBarSalvar.Image = global::EditorTXT.Properties.Resources.save;
+            this.toolBarSalvar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolBarSalvar.Name = "toolBarSalvar";
+            this.toolBarSalvar.Size = new System.Drawing.Size(29, 32);
+            this.toolBarSalvar.Text = "Salvar";
+            this.toolBarSalvar.Click += new System.EventHandler(this.mArquivoSalvar_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
             this.toolStripSeparator5.Size = new System.Drawing.Size(6, 35);
             // 
-            // toolStripButton5
+            // toolBarFonte
             // 
-            this.toolStripButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton5.Font = new System.Drawing.Font("Sylfaen", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
-            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(29, 32);
-            this.toolStripButton5.Text = "A";
-            this.toolStripButton5.ToolTipText = "Formatar";
+            this.toolBarFonte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.toolBarFonte.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolBarFonte.Font = new System.Drawing.Font("Sylfaen", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.toolBarFonte.Image = ((System.Drawing.Image)(resources.GetObject("toolBarFonte.Image")));
+            this.toolBarFonte.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolBarFonte.Name = "toolBarFonte";
+            this.toolBarFonte.Size = new System.Drawing.Size(29, 32);
+            this.toolBarFonte.Text = "A";
+            this.toolBarFonte.ToolTipText = "Formatar";
+            this.toolBarFonte.Click += new System.EventHandler(this.mFormatarFonte_Click);
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
             this.toolStripSeparator6.Size = new System.Drawing.Size(6, 35);
             // 
-            // toolStripButton6
+            // toolBarZoomMenos
             // 
-            this.toolStripButton6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toolStripButton6.ForeColor = System.Drawing.Color.Red;
-            this.toolStripButton6.Image = global::EditorTXT.Properties.Resources.zoom;
-            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton6.Name = "toolStripButton6";
-            this.toolStripButton6.Size = new System.Drawing.Size(44, 32);
-            this.toolStripButton6.Text = "-";
-            this.toolStripButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.toolStripButton6.ToolTipText = "- Zoom";
+            this.toolBarZoomMenos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.toolBarZoomMenos.ForeColor = System.Drawing.Color.Red;
+            this.toolBarZoomMenos.Image = global::EditorTXT.Properties.Resources.zoom;
+            this.toolBarZoomMenos.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolBarZoomMenos.Name = "toolBarZoomMenos";
+            this.toolBarZoomMenos.Size = new System.Drawing.Size(44, 32);
+            this.toolBarZoomMenos.Text = "-";
+            this.toolBarZoomMenos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.toolBarZoomMenos.ToolTipText = "- Zoom";
+            this.toolBarZoomMenos.Click += new System.EventHandler(this.mExibirZoomReduzir_Click);
             // 
-            // toolStripButton8
+            // toolBarZoom
             // 
-            this.toolStripButton8.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton8.Image = global::EditorTXT.Properties.Resources.zoom;
-            this.toolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton8.Name = "toolStripButton8";
-            this.toolStripButton8.Size = new System.Drawing.Size(29, 32);
-            this.toolStripButton8.Text = "Zoom 100%";
+            this.toolBarZoom.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolBarZoom.Image = global::EditorTXT.Properties.Resources.zoom;
+            this.toolBarZoom.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolBarZoom.Name = "toolBarZoom";
+            this.toolBarZoom.Size = new System.Drawing.Size(29, 32);
+            this.toolBarZoom.Text = "Zoom 100%";
+            this.toolBarZoom.Click += new System.EventHandler(this.mExibirZoomRestaurar_Click);
             // 
-            // toolStripButton7
+            // toolBarZoomMais
             // 
-            this.toolStripButton7.ForeColor = System.Drawing.Color.Green;
-            this.toolStripButton7.Image = global::EditorTXT.Properties.Resources.zoom;
-            this.toolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton7.Name = "toolStripButton7";
-            this.toolStripButton7.Size = new System.Drawing.Size(43, 32);
-            this.toolStripButton7.Text = "+";
-            this.toolStripButton7.ToolTipText = "+ Zoom";
+            this.toolBarZoomMais.ForeColor = System.Drawing.Color.Green;
+            this.toolBarZoomMais.Image = global::EditorTXT.Properties.Resources.zoom;
+            this.toolBarZoomMais.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolBarZoomMais.Name = "toolBarZoomMais";
+            this.toolBarZoomMais.Size = new System.Drawing.Size(43, 32);
+            this.toolBarZoomMais.Text = "+";
+            this.toolBarZoomMais.ToolTipText = "+ Zoom";
+            this.toolBarZoomMais.Click += new System.EventHandler(this.mExibirZoomAmpliar_Click);
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
             this.toolStripSeparator7.Size = new System.Drawing.Size(6, 35);
             // 
-            // toolStripButton9
+            // toolBarAjuda
             // 
-            this.toolStripButton9.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton9.Image = global::EditorTXT.Properties.Resources.help;
-            this.toolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton9.Name = "toolStripButton9";
-            this.toolStripButton9.Size = new System.Drawing.Size(29, 32);
-            this.toolStripButton9.Text = "Ajuda";
+            this.toolBarAjuda.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolBarAjuda.Image = global::EditorTXT.Properties.Resources.help;
+            this.toolBarAjuda.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolBarAjuda.Name = "toolBarAjuda";
+            this.toolBarAjuda.Size = new System.Drawing.Size(29, 32);
+            this.toolBarAjuda.Text = "Ajuda";
+            this.toolBarAjuda.Click += new System.EventHandler(this.mAjudaExibirAjuda_Click);
             // 
             // txtConteudo
             // 
@@ -573,16 +581,16 @@
         private System.Windows.Forms.ToolStripStatusLabel statusBarLabel;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.RichTextBox txtConteudo;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripButton toolBarNovo;
+        private System.Windows.Forms.ToolStripButton toolBarAbrir;
+        private System.Windows.Forms.ToolStripButton toolBarSalvar;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
-        private System.Windows.Forms.ToolStripButton toolStripButton5;
+        private System.Windows.Forms.ToolStripButton toolBarFonte;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
-        private System.Windows.Forms.ToolStripButton toolStripButton6;
-        private System.Windows.Forms.ToolStripButton toolStripButton7;
-        private System.Windows.Forms.ToolStripButton toolStripButton8;
+        private System.Windows.Forms.ToolStripButton toolBarZoomMenos;
+        private System.Windows.Forms.ToolStripButton toolBarZoomMais;
+        private System.Windows.Forms.ToolStripButton toolBarZoom;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
-        private System.Windows.Forms.ToolStripButton toolStripButton9;
+        private System.Windows.Forms.ToolStripButton toolBarAjuda;
     }
 }
