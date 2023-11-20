@@ -29,518 +29,487 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.menuBar = new System.Windows.Forms.MenuStrip();
-            this.mArquivo = new System.Windows.Forms.ToolStripMenuItem();
-            this.mArquivoNovo = new System.Windows.Forms.ToolStripMenuItem();
-            this.mArquivoNovaJanela = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.mArquivoAbrir = new System.Windows.Forms.ToolStripMenuItem();
-            this.mArquivoSalvar = new System.Windows.Forms.ToolStripMenuItem();
-            this.mArquivoSalvarComo = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.mArquivoSair = new System.Windows.Forms.ToolStripMenuItem();
-            this.mEditar = new System.Windows.Forms.ToolStripMenuItem();
-            this.mEditarDesfazer = new System.Windows.Forms.ToolStripMenuItem();
-            this.mEditarRefazer = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.mEditarRecortar = new System.Windows.Forms.ToolStripMenuItem();
-            this.mEditarCopiar = new System.Windows.Forms.ToolStripMenuItem();
-            this.mEditarColar = new System.Windows.Forms.ToolStripMenuItem();
-            this.mEditarExcluir = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.mEditarDataEHora = new System.Windows.Forms.ToolStripMenuItem();
-            this.mFormatar = new System.Windows.Forms.ToolStripMenuItem();
-            this.mFormatarQuebraLinha = new System.Windows.Forms.ToolStripMenuItem();
-            this.mFormatarFonte = new System.Windows.Forms.ToolStripMenuItem();
-            this.mExibir = new System.Windows.Forms.ToolStripMenuItem();
-            this.mExibirZoom = new System.Windows.Forms.ToolStripMenuItem();
-            this.mExibirZoomAmpliar = new System.Windows.Forms.ToolStripMenuItem();
-            this.mExibirZoomReduzir = new System.Windows.Forms.ToolStripMenuItem();
-            this.mExibirZoomRestaurar = new System.Windows.Forms.ToolStripMenuItem();
-            this.mExibirBarraStatus = new System.Windows.Forms.ToolStripMenuItem();
-            this.mAjuda = new System.Windows.Forms.ToolStripMenuItem();
-            this.mAjudaExibirAjuda = new System.Windows.Forms.ToolStripMenuItem();
-            this.mAjudaSobre = new System.Windows.Forms.ToolStripMenuItem();
-            this.statusBar = new System.Windows.Forms.StatusStrip();
-            this.statusBarLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolBarNovo = new System.Windows.Forms.ToolStripButton();
-            this.toolBarAbrir = new System.Windows.Forms.ToolStripButton();
-            this.toolBarSalvar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolBarFonte = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolBarZoomMenos = new System.Windows.Forms.ToolStripButton();
-            this.toolBarZoom = new System.Windows.Forms.ToolStripButton();
-            this.toolBarZoomMais = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolBarAjuda = new System.Windows.Forms.ToolStripButton();
-            this.txtConteudo = new System.Windows.Forms.RichTextBox();
-            this.menuBar.SuspendLayout();
-            this.statusBar.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
-            this.SuspendLayout();
+            menuBar = new System.Windows.Forms.MenuStrip();
+            mArquivo = new System.Windows.Forms.ToolStripMenuItem();
+            mArquivoNovo = new System.Windows.Forms.ToolStripMenuItem();
+            mArquivoNovaJanela = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            mArquivoAbrir = new System.Windows.Forms.ToolStripMenuItem();
+            mCarregarImagem = new System.Windows.Forms.ToolStripMenuItem();
+            mArquivoSalvar = new System.Windows.Forms.ToolStripMenuItem();
+            mArquivoSalvarComo = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            mArquivoSair = new System.Windows.Forms.ToolStripMenuItem();
+            mEditar = new System.Windows.Forms.ToolStripMenuItem();
+            mEditarDesfazer = new System.Windows.Forms.ToolStripMenuItem();
+            mEditarRefazer = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            mEditarRecortar = new System.Windows.Forms.ToolStripMenuItem();
+            mEditarCopiar = new System.Windows.Forms.ToolStripMenuItem();
+            mEditarColar = new System.Windows.Forms.ToolStripMenuItem();
+            mEditarExcluir = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            mEditarDataEHora = new System.Windows.Forms.ToolStripMenuItem();
+            mFormatar = new System.Windows.Forms.ToolStripMenuItem();
+            mFormatarQuebraLinha = new System.Windows.Forms.ToolStripMenuItem();
+            mFormatarFonte = new System.Windows.Forms.ToolStripMenuItem();
+            mExibir = new System.Windows.Forms.ToolStripMenuItem();
+            mExibirZoom = new System.Windows.Forms.ToolStripMenuItem();
+            mExibirZoomAmpliar = new System.Windows.Forms.ToolStripMenuItem();
+            mExibirZoomReduzir = new System.Windows.Forms.ToolStripMenuItem();
+            mExibirZoomRestaurar = new System.Windows.Forms.ToolStripMenuItem();
+            mExibirBarraStatus = new System.Windows.Forms.ToolStripMenuItem();
+            mAjuda = new System.Windows.Forms.ToolStripMenuItem();
+            mAjudaExibirAjuda = new System.Windows.Forms.ToolStripMenuItem();
+            mAjudaSobre = new System.Windows.Forms.ToolStripMenuItem();
+            statusBar = new System.Windows.Forms.StatusStrip();
+            statusBarLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            toolStrip1 = new System.Windows.Forms.ToolStrip();
+            toolBarNovo = new System.Windows.Forms.ToolStripButton();
+            toolBarAbrir = new System.Windows.Forms.ToolStripButton();
+            toolBarSalvar = new System.Windows.Forms.ToolStripButton();
+            toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            toolBarFonte = new System.Windows.Forms.ToolStripButton();
+            toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            toolBarZoomMenos = new System.Windows.Forms.ToolStripButton();
+            toolBarZoom = new System.Windows.Forms.ToolStripButton();
+            toolBarZoomMais = new System.Windows.Forms.ToolStripButton();
+            toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            toolBarAjuda = new System.Windows.Forms.ToolStripButton();
+            txtConteudo = new System.Windows.Forms.RichTextBox();
+            menuBar.SuspendLayout();
+            statusBar.SuspendLayout();
+            toolStrip1.SuspendLayout();
+            SuspendLayout();
             // 
             // menuBar
             // 
-            this.menuBar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.menuBar.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mArquivo,
-            this.mEditar,
-            this.mFormatar,
-            this.mExibir,
-            this.mAjuda});
-            this.menuBar.Location = new System.Drawing.Point(0, 0);
-            this.menuBar.Name = "menuBar";
-            this.menuBar.Size = new System.Drawing.Size(782, 36);
-            this.menuBar.TabIndex = 0;
-            this.menuBar.Text = "menuStrip1";
+            menuBar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            menuBar.ImageScalingSize = new System.Drawing.Size(20, 20);
+            menuBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { mArquivo, mEditar, mFormatar, mExibir, mAjuda });
+            menuBar.Location = new System.Drawing.Point(0, 0);
+            menuBar.Name = "menuBar";
+            menuBar.Size = new System.Drawing.Size(782, 36);
+            menuBar.TabIndex = 0;
+            menuBar.Text = "menuStrip1";
             // 
             // mArquivo
             // 
-            this.mArquivo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mArquivoNovo,
-            this.mArquivoNovaJanela,
-            this.toolStripSeparator1,
-            this.mArquivoAbrir,
-            this.mArquivoSalvar,
-            this.mArquivoSalvarComo,
-            this.toolStripSeparator2,
-            this.mArquivoSair});
-            this.mArquivo.Name = "mArquivo";
-            this.mArquivo.Size = new System.Drawing.Size(97, 32);
-            this.mArquivo.Text = "Arquivo";
+            mArquivo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { mArquivoNovo, mArquivoNovaJanela, toolStripSeparator1, mArquivoAbrir, mCarregarImagem, mArquivoSalvar, mArquivoSalvarComo, toolStripSeparator2, mArquivoSair });
+            mArquivo.Name = "mArquivo";
+            mArquivo.Size = new System.Drawing.Size(97, 32);
+            mArquivo.Text = "Arquivo";
             // 
             // mArquivoNovo
             // 
-            this.mArquivoNovo.Image = global::EditorTXT.Properties.Resources.new_document;
-            this.mArquivoNovo.Name = "mArquivoNovo";
-            this.mArquivoNovo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.mArquivoNovo.Size = new System.Drawing.Size(335, 32);
-            this.mArquivoNovo.Text = "Novo";
-            this.mArquivoNovo.Click += new System.EventHandler(this.mArquivoNovo_Click);
+            mArquivoNovo.Image = Properties.Resources.new_document;
+            mArquivoNovo.Name = "mArquivoNovo";
+            mArquivoNovo.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N;
+            mArquivoNovo.Size = new System.Drawing.Size(335, 32);
+            mArquivoNovo.Text = "Novo";
+            mArquivoNovo.Click += mArquivoNovo_Click;
             // 
             // mArquivoNovaJanela
             // 
-            this.mArquivoNovaJanela.Image = global::EditorTXT.Properties.Resources.notes;
-            this.mArquivoNovaJanela.Name = "mArquivoNovaJanela";
-            this.mArquivoNovaJanela.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.N)));
-            this.mArquivoNovaJanela.Size = new System.Drawing.Size(335, 32);
-            this.mArquivoNovaJanela.Text = "Nova Janela";
-            this.mArquivoNovaJanela.Click += new System.EventHandler(this.mArquivoNovaJanela_Click);
+            mArquivoNovaJanela.Image = Properties.Resources.notes;
+            mArquivoNovaJanela.Name = "mArquivoNovaJanela";
+            mArquivoNovaJanela.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.N;
+            mArquivoNovaJanela.Size = new System.Drawing.Size(335, 32);
+            mArquivoNovaJanela.Text = "Nova Janela";
+            mArquivoNovaJanela.Click += mArquivoNovaJanela_Click;
             // 
             // toolStripSeparator1
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(332, 6);
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new System.Drawing.Size(332, 6);
             // 
             // mArquivoAbrir
             // 
-            this.mArquivoAbrir.Image = global::EditorTXT.Properties.Resources.folder;
-            this.mArquivoAbrir.Name = "mArquivoAbrir";
-            this.mArquivoAbrir.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.mArquivoAbrir.Size = new System.Drawing.Size(335, 32);
-            this.mArquivoAbrir.Text = "Abrir";
-            this.mArquivoAbrir.Click += new System.EventHandler(this.mArquivoAbrir_Click);
+            mArquivoAbrir.Image = Properties.Resources.folder;
+            mArquivoAbrir.Name = "mArquivoAbrir";
+            mArquivoAbrir.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O;
+            mArquivoAbrir.Size = new System.Drawing.Size(335, 32);
+            mArquivoAbrir.Text = "Abrir";
+            mArquivoAbrir.Click += mArquivoAbrir_Click;
+            // 
+            // mCarregarImagem
+            // 
+            mCarregarImagem.Image = Properties.Resources.addimage;
+            mCarregarImagem.Name = "mCarregarImagem";
+            mCarregarImagem.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I;
+            mCarregarImagem.Size = new System.Drawing.Size(335, 32);
+            mCarregarImagem.Text = "Imagem";
+            mCarregarImagem.Click += mCarregarImagem_Click;
             // 
             // mArquivoSalvar
             // 
-            this.mArquivoSalvar.Image = global::EditorTXT.Properties.Resources.save;
-            this.mArquivoSalvar.Name = "mArquivoSalvar";
-            this.mArquivoSalvar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.mArquivoSalvar.Size = new System.Drawing.Size(335, 32);
-            this.mArquivoSalvar.Text = "Salvar";
-            this.mArquivoSalvar.Click += new System.EventHandler(this.mArquivoSalvar_Click);
+            mArquivoSalvar.Image = Properties.Resources.save;
+            mArquivoSalvar.Name = "mArquivoSalvar";
+            mArquivoSalvar.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S;
+            mArquivoSalvar.Size = new System.Drawing.Size(335, 32);
+            mArquivoSalvar.Text = "Salvar";
+            mArquivoSalvar.Click += mArquivoSalvar_Click;
             // 
             // mArquivoSalvarComo
             // 
-            this.mArquivoSalvarComo.Image = global::EditorTXT.Properties.Resources.save;
-            this.mArquivoSalvarComo.Name = "mArquivoSalvarComo";
-            this.mArquivoSalvarComo.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.S)));
-            this.mArquivoSalvarComo.Size = new System.Drawing.Size(335, 32);
-            this.mArquivoSalvarComo.Text = "Salvar Como";
-            this.mArquivoSalvarComo.Click += new System.EventHandler(this.mArquivoSalvarComo_Click);
+            mArquivoSalvarComo.Image = Properties.Resources.save;
+            mArquivoSalvarComo.Name = "mArquivoSalvarComo";
+            mArquivoSalvarComo.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.S;
+            mArquivoSalvarComo.Size = new System.Drawing.Size(335, 32);
+            mArquivoSalvarComo.Text = "Salvar Como";
+            mArquivoSalvarComo.Click += mArquivoSalvarComo_Click;
             // 
             // toolStripSeparator2
             // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(332, 6);
+            toolStripSeparator2.Name = "toolStripSeparator2";
+            toolStripSeparator2.Size = new System.Drawing.Size(332, 6);
             // 
             // mArquivoSair
             // 
-            this.mArquivoSair.Image = global::EditorTXT.Properties.Resources.exit;
-            this.mArquivoSair.Name = "mArquivoSair";
-            this.mArquivoSair.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.mArquivoSair.Size = new System.Drawing.Size(335, 32);
-            this.mArquivoSair.Text = "Sair";
-            this.mArquivoSair.Click += new System.EventHandler(this.mArquivoSair_Click);
+            mArquivoSair.Image = Properties.Resources.exit;
+            mArquivoSair.Name = "mArquivoSair";
+            mArquivoSair.ShortcutKeys = System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4;
+            mArquivoSair.Size = new System.Drawing.Size(335, 32);
+            mArquivoSair.Text = "Sair";
+            mArquivoSair.Click += mArquivoSair_Click;
             // 
             // mEditar
             // 
-            this.mEditar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mEditarDesfazer,
-            this.mEditarRefazer,
-            this.toolStripSeparator3,
-            this.mEditarRecortar,
-            this.mEditarCopiar,
-            this.mEditarColar,
-            this.mEditarExcluir,
-            this.toolStripSeparator4,
-            this.mEditarDataEHora});
-            this.mEditar.Name = "mEditar";
-            this.mEditar.Size = new System.Drawing.Size(77, 32);
-            this.mEditar.Text = "Editar";
+            mEditar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { mEditarDesfazer, mEditarRefazer, toolStripSeparator3, mEditarRecortar, mEditarCopiar, mEditarColar, mEditarExcluir, toolStripSeparator4, mEditarDataEHora });
+            mEditar.Name = "mEditar";
+            mEditar.Size = new System.Drawing.Size(77, 32);
+            mEditar.Text = "Editar";
             // 
             // mEditarDesfazer
             // 
-            this.mEditarDesfazer.Name = "mEditarDesfazer";
-            this.mEditarDesfazer.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.mEditarDesfazer.Size = new System.Drawing.Size(245, 32);
-            this.mEditarDesfazer.Text = "Desfazer";
-            this.mEditarDesfazer.Click += new System.EventHandler(this.mEditarDesfazer_Click);
+            mEditarDesfazer.Name = "mEditarDesfazer";
+            mEditarDesfazer.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z;
+            mEditarDesfazer.Size = new System.Drawing.Size(245, 32);
+            mEditarDesfazer.Text = "Desfazer";
+            mEditarDesfazer.Click += mEditarDesfazer_Click;
             // 
             // mEditarRefazer
             // 
-            this.mEditarRefazer.Name = "mEditarRefazer";
-            this.mEditarRefazer.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.mEditarRefazer.Size = new System.Drawing.Size(245, 32);
-            this.mEditarRefazer.Text = "Refazer";
-            this.mEditarRefazer.Click += new System.EventHandler(this.mEditarRefazer_Click);
+            mEditarRefazer.Name = "mEditarRefazer";
+            mEditarRefazer.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y;
+            mEditarRefazer.Size = new System.Drawing.Size(245, 32);
+            mEditarRefazer.Text = "Refazer";
+            mEditarRefazer.Click += mEditarRefazer_Click;
             // 
             // toolStripSeparator3
             // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(242, 6);
+            toolStripSeparator3.Name = "toolStripSeparator3";
+            toolStripSeparator3.Size = new System.Drawing.Size(242, 6);
             // 
             // mEditarRecortar
             // 
-            this.mEditarRecortar.Name = "mEditarRecortar";
-            this.mEditarRecortar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.mEditarRecortar.Size = new System.Drawing.Size(245, 32);
-            this.mEditarRecortar.Text = "Recortar";
-            this.mEditarRecortar.Click += new System.EventHandler(this.mEditarRecortar_Click);
+            mEditarRecortar.Image = Properties.Resources.text;
+            mEditarRecortar.Name = "mEditarRecortar";
+            mEditarRecortar.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X;
+            mEditarRecortar.Size = new System.Drawing.Size(245, 32);
+            mEditarRecortar.Text = "Recortar";
+            mEditarRecortar.Click += mEditarRecortar_Click;
             // 
             // mEditarCopiar
             // 
-            this.mEditarCopiar.Name = "mEditarCopiar";
-            this.mEditarCopiar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.mEditarCopiar.Size = new System.Drawing.Size(245, 32);
-            this.mEditarCopiar.Text = "Copiar";
-            this.mEditarCopiar.Click += new System.EventHandler(this.mEditarCopiar_Click);
+            mEditarCopiar.Image = Properties.Resources.text;
+            mEditarCopiar.Name = "mEditarCopiar";
+            mEditarCopiar.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C;
+            mEditarCopiar.Size = new System.Drawing.Size(245, 32);
+            mEditarCopiar.Text = "Copiar";
+            mEditarCopiar.Click += mEditarCopiar_Click;
             // 
             // mEditarColar
             // 
-            this.mEditarColar.Image = global::EditorTXT.Properties.Resources.text;
-            this.mEditarColar.Name = "mEditarColar";
-            this.mEditarColar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.mEditarColar.Size = new System.Drawing.Size(245, 32);
-            this.mEditarColar.Text = "Colar";
-            this.mEditarColar.Click += new System.EventHandler(this.mEditarColar_Click);
+            mEditarColar.Image = Properties.Resources.text;
+            mEditarColar.Name = "mEditarColar";
+            mEditarColar.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V;
+            mEditarColar.Size = new System.Drawing.Size(245, 32);
+            mEditarColar.Text = "Colar";
+            mEditarColar.Click += mEditarColar_Click;
             // 
             // mEditarExcluir
             // 
-            this.mEditarExcluir.Name = "mEditarExcluir";
-            this.mEditarExcluir.ShortcutKeyDisplayString = "Delete";
-            this.mEditarExcluir.Size = new System.Drawing.Size(245, 32);
-            this.mEditarExcluir.Text = "Excluir";
-            this.mEditarExcluir.Click += new System.EventHandler(this.mEditarExcluir_Click);
+            mEditarExcluir.Name = "mEditarExcluir";
+            mEditarExcluir.ShortcutKeyDisplayString = "Delete";
+            mEditarExcluir.Size = new System.Drawing.Size(245, 32);
+            mEditarExcluir.Text = "Excluir";
+            mEditarExcluir.Click += mEditarExcluir_Click;
             // 
             // toolStripSeparator4
             // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(242, 6);
+            toolStripSeparator4.Name = "toolStripSeparator4";
+            toolStripSeparator4.Size = new System.Drawing.Size(242, 6);
             // 
             // mEditarDataEHora
             // 
-            this.mEditarDataEHora.Name = "mEditarDataEHora";
-            this.mEditarDataEHora.ShortcutKeys = System.Windows.Forms.Keys.F5;
-            this.mEditarDataEHora.Size = new System.Drawing.Size(245, 32);
-            this.mEditarDataEHora.Text = "Data e Hora";
-            this.mEditarDataEHora.Click += new System.EventHandler(this.mEditarDataEHora_Click);
+            mEditarDataEHora.Name = "mEditarDataEHora";
+            mEditarDataEHora.ShortcutKeys = System.Windows.Forms.Keys.F5;
+            mEditarDataEHora.Size = new System.Drawing.Size(245, 32);
+            mEditarDataEHora.Text = "Data e Hora";
+            mEditarDataEHora.Click += mEditarDataEHora_Click;
             // 
             // mFormatar
             // 
-            this.mFormatar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mFormatarQuebraLinha,
-            this.mFormatarFonte});
-            this.mFormatar.Name = "mFormatar";
-            this.mFormatar.Size = new System.Drawing.Size(107, 32);
-            this.mFormatar.Text = "Formatar";
+            mFormatar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { mFormatarQuebraLinha, mFormatarFonte });
+            mFormatar.Name = "mFormatar";
+            mFormatar.Size = new System.Drawing.Size(107, 32);
+            mFormatar.Text = "Formatar";
             // 
             // mFormatarQuebraLinha
             // 
-            this.mFormatarQuebraLinha.CheckOnClick = true;
-            this.mFormatarQuebraLinha.Name = "mFormatarQuebraLinha";
-            this.mFormatarQuebraLinha.Size = new System.Drawing.Size(358, 32);
-            this.mFormatarQuebraLinha.Text = "Quebra Automática de Linha";
-            this.mFormatarQuebraLinha.Click += new System.EventHandler(this.mFormatarQuebraLinha_Click);
+            mFormatarQuebraLinha.CheckOnClick = true;
+            mFormatarQuebraLinha.Name = "mFormatarQuebraLinha";
+            mFormatarQuebraLinha.Size = new System.Drawing.Size(358, 32);
+            mFormatarQuebraLinha.Text = "Quebra Automática de Linha";
+            mFormatarQuebraLinha.Click += mFormatarQuebraLinha_Click;
             // 
             // mFormatarFonte
             // 
-            this.mFormatarFonte.Name = "mFormatarFonte";
-            this.mFormatarFonte.Size = new System.Drawing.Size(358, 32);
-            this.mFormatarFonte.Text = "Fonte";
-            this.mFormatarFonte.Click += new System.EventHandler(this.mFormatarFonte_Click);
+            mFormatarFonte.Name = "mFormatarFonte";
+            mFormatarFonte.Size = new System.Drawing.Size(358, 32);
+            mFormatarFonte.Text = "Fonte";
+            mFormatarFonte.Click += mFormatarFonte_Click;
             // 
             // mExibir
             // 
-            this.mExibir.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mExibirZoom,
-            this.mExibirBarraStatus});
-            this.mExibir.Name = "mExibir";
-            this.mExibir.Size = new System.Drawing.Size(75, 32);
-            this.mExibir.Text = "Exibir";
+            mExibir.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { mExibirZoom, mExibirBarraStatus });
+            mExibir.Name = "mExibir";
+            mExibir.Size = new System.Drawing.Size(75, 32);
+            mExibir.Text = "Exibir";
             // 
             // mExibirZoom
             // 
-            this.mExibirZoom.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mExibirZoomAmpliar,
-            this.mExibirZoomReduzir,
-            this.mExibirZoomRestaurar});
-            this.mExibirZoom.Image = global::EditorTXT.Properties.Resources.zoom1;
-            this.mExibirZoom.Name = "mExibirZoom";
-            this.mExibirZoom.Size = new System.Drawing.Size(234, 32);
-            this.mExibirZoom.Text = "Zoom";
+            mExibirZoom.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { mExibirZoomAmpliar, mExibirZoomReduzir, mExibirZoomRestaurar });
+            mExibirZoom.Image = Properties.Resources.zoom1;
+            mExibirZoom.Name = "mExibirZoom";
+            mExibirZoom.Size = new System.Drawing.Size(234, 32);
+            mExibirZoom.Text = "Zoom";
             // 
             // mExibirZoomAmpliar
             // 
-            this.mExibirZoomAmpliar.Image = global::EditorTXT.Properties.Resources.zoom;
-            this.mExibirZoomAmpliar.Name = "mExibirZoomAmpliar";
-            this.mExibirZoomAmpliar.ShortcutKeyDisplayString = "Ctrl+adição";
-            this.mExibirZoomAmpliar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Oemplus)));
-            this.mExibirZoomAmpliar.Size = new System.Drawing.Size(303, 32);
-            this.mExibirZoomAmpliar.Text = "Ampliar";
-            this.mExibirZoomAmpliar.Click += new System.EventHandler(this.mExibirZoomAmpliar_Click);
+            mExibirZoomAmpliar.Image = Properties.Resources.zoom;
+            mExibirZoomAmpliar.Name = "mExibirZoomAmpliar";
+            mExibirZoomAmpliar.ShortcutKeyDisplayString = "Ctrl+adição";
+            mExibirZoomAmpliar.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Oemplus;
+            mExibirZoomAmpliar.Size = new System.Drawing.Size(303, 32);
+            mExibirZoomAmpliar.Text = "Ampliar";
+            mExibirZoomAmpliar.Click += mExibirZoomAmpliar_Click;
             // 
             // mExibirZoomReduzir
             // 
-            this.mExibirZoomReduzir.Image = global::EditorTXT.Properties.Resources.zoom;
-            this.mExibirZoomReduzir.Name = "mExibirZoomReduzir";
-            this.mExibirZoomReduzir.ShortcutKeyDisplayString = "Ctrl+sibtração";
-            this.mExibirZoomReduzir.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.OemMinus)));
-            this.mExibirZoomReduzir.Size = new System.Drawing.Size(303, 32);
-            this.mExibirZoomReduzir.Text = "Reduzir";
-            this.mExibirZoomReduzir.Click += new System.EventHandler(this.mExibirZoomReduzir_Click);
+            mExibirZoomReduzir.Image = Properties.Resources.zoom;
+            mExibirZoomReduzir.Name = "mExibirZoomReduzir";
+            mExibirZoomReduzir.ShortcutKeyDisplayString = "Ctrl+sibtração";
+            mExibirZoomReduzir.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.OemMinus;
+            mExibirZoomReduzir.Size = new System.Drawing.Size(303, 32);
+            mExibirZoomReduzir.Text = "Reduzir";
+            mExibirZoomReduzir.Click += mExibirZoomReduzir_Click;
             // 
             // mExibirZoomRestaurar
             // 
-            this.mExibirZoomRestaurar.Name = "mExibirZoomRestaurar";
-            this.mExibirZoomRestaurar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D0)));
-            this.mExibirZoomRestaurar.Size = new System.Drawing.Size(303, 32);
-            this.mExibirZoomRestaurar.Text = "Restaurar";
-            this.mExibirZoomRestaurar.Click += new System.EventHandler(this.mExibirZoomRestaurar_Click);
+            mExibirZoomRestaurar.Name = "mExibirZoomRestaurar";
+            mExibirZoomRestaurar.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D0;
+            mExibirZoomRestaurar.Size = new System.Drawing.Size(303, 32);
+            mExibirZoomRestaurar.Text = "Restaurar";
+            mExibirZoomRestaurar.Click += mExibirZoomRestaurar_Click;
             // 
             // mExibirBarraStatus
             // 
-            this.mExibirBarraStatus.Checked = true;
-            this.mExibirBarraStatus.CheckOnClick = true;
-            this.mExibirBarraStatus.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.mExibirBarraStatus.Name = "mExibirBarraStatus";
-            this.mExibirBarraStatus.Size = new System.Drawing.Size(234, 32);
-            this.mExibirBarraStatus.Text = "Barra de Status";
-            this.mExibirBarraStatus.Click += new System.EventHandler(this.mExibirBarraStatus_Click);
+            mExibirBarraStatus.Checked = true;
+            mExibirBarraStatus.CheckOnClick = true;
+            mExibirBarraStatus.CheckState = System.Windows.Forms.CheckState.Checked;
+            mExibirBarraStatus.Name = "mExibirBarraStatus";
+            mExibirBarraStatus.Size = new System.Drawing.Size(234, 32);
+            mExibirBarraStatus.Text = "Barra de Status";
+            mExibirBarraStatus.Click += mExibirBarraStatus_Click;
             // 
             // mAjuda
             // 
-            this.mAjuda.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mAjudaExibirAjuda,
-            this.mAjudaSobre});
-            this.mAjuda.Name = "mAjuda";
-            this.mAjuda.Size = new System.Drawing.Size(78, 32);
-            this.mAjuda.Text = "Ajuda";
+            mAjuda.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { mAjudaExibirAjuda, mAjudaSobre });
+            mAjuda.Name = "mAjuda";
+            mAjuda.Size = new System.Drawing.Size(78, 32);
+            mAjuda.Text = "Ajuda";
             // 
             // mAjudaExibirAjuda
             // 
-            this.mAjudaExibirAjuda.Image = global::EditorTXT.Properties.Resources.help;
-            this.mAjudaExibirAjuda.Name = "mAjudaExibirAjuda";
-            this.mAjudaExibirAjuda.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.mAjudaExibirAjuda.Size = new System.Drawing.Size(235, 32);
-            this.mAjudaExibirAjuda.Text = "Exibir Ajuda";
-            this.mAjudaExibirAjuda.Click += new System.EventHandler(this.mAjudaExibirAjuda_Click);
+            mAjudaExibirAjuda.Image = Properties.Resources.help;
+            mAjudaExibirAjuda.Name = "mAjudaExibirAjuda";
+            mAjudaExibirAjuda.ShortcutKeys = System.Windows.Forms.Keys.F1;
+            mAjudaExibirAjuda.Size = new System.Drawing.Size(235, 32);
+            mAjudaExibirAjuda.Text = "Exibir Ajuda";
+            mAjudaExibirAjuda.Click += mAjudaExibirAjuda_Click;
             // 
             // mAjudaSobre
             // 
-            this.mAjudaSobre.Name = "mAjudaSobre";
-            this.mAjudaSobre.Size = new System.Drawing.Size(235, 32);
-            this.mAjudaSobre.Text = "Sobre o Editor";
-            this.mAjudaSobre.Click += new System.EventHandler(this.mAjudaSobre_Click);
+            mAjudaSobre.Image = Properties.Resources.info;
+            mAjudaSobre.Name = "mAjudaSobre";
+            mAjudaSobre.ShortcutKeys = System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F8;
+            mAjudaSobre.ShowShortcutKeys = false;
+            mAjudaSobre.Size = new System.Drawing.Size(235, 32);
+            mAjudaSobre.Text = "Sobre o Editor";
+            mAjudaSobre.Click += mAjudaSobre_Click;
             // 
             // statusBar
             // 
-            this.statusBar.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.statusBarLabel});
-            this.statusBar.Location = new System.Drawing.Point(0, 527);
-            this.statusBar.Name = "statusBar";
-            this.statusBar.Size = new System.Drawing.Size(782, 26);
-            this.statusBar.TabIndex = 1;
-            this.statusBar.Text = "statusStrip1";
+            statusBar.ImageScalingSize = new System.Drawing.Size(20, 20);
+            statusBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { statusBarLabel });
+            statusBar.Location = new System.Drawing.Point(0, 527);
+            statusBar.Name = "statusBar";
+            statusBar.Size = new System.Drawing.Size(782, 26);
+            statusBar.TabIndex = 1;
+            statusBar.Text = "statusStrip1";
             // 
             // statusBarLabel
             // 
-            this.statusBarLabel.Name = "statusBarLabel";
-            this.statusBarLabel.Size = new System.Drawing.Size(49, 20);
-            this.statusBarLabel.Text = "100 %";
+            statusBarLabel.Name = "statusBarLabel";
+            statusBarLabel.Size = new System.Drawing.Size(49, 20);
+            statusBarLabel.Text = "100 %";
             // 
             // toolStrip1
             // 
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolBarNovo,
-            this.toolBarAbrir,
-            this.toolBarSalvar,
-            this.toolStripSeparator5,
-            this.toolBarFonte,
-            this.toolStripSeparator6,
-            this.toolBarZoomMenos,
-            this.toolBarZoom,
-            this.toolBarZoomMais,
-            this.toolStripSeparator7,
-            this.toolBarAjuda});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 36);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(782, 35);
-            this.toolStrip1.TabIndex = 3;
-            this.toolStrip1.Text = "toolStrip1";
+            toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { toolBarNovo, toolBarAbrir, toolBarSalvar, toolStripSeparator5, toolBarFonte, toolStripSeparator6, toolBarZoomMenos, toolBarZoom, toolBarZoomMais, toolStripSeparator7, toolBarAjuda });
+            toolStrip1.Location = new System.Drawing.Point(0, 36);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Size = new System.Drawing.Size(782, 35);
+            toolStrip1.TabIndex = 3;
+            toolStrip1.Text = "toolStrip1";
             // 
             // toolBarNovo
             // 
-            this.toolBarNovo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolBarNovo.Image = global::EditorTXT.Properties.Resources.new_document;
-            this.toolBarNovo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolBarNovo.Name = "toolBarNovo";
-            this.toolBarNovo.Size = new System.Drawing.Size(29, 32);
-            this.toolBarNovo.Text = "Novo";
-            this.toolBarNovo.Click += new System.EventHandler(this.mArquivoNovo_Click);
+            toolBarNovo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolBarNovo.Image = Properties.Resources.new_document;
+            toolBarNovo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolBarNovo.Name = "toolBarNovo";
+            toolBarNovo.Size = new System.Drawing.Size(29, 32);
+            toolBarNovo.Text = "Novo";
+            toolBarNovo.Click += mArquivoNovo_Click;
             // 
             // toolBarAbrir
             // 
-            this.toolBarAbrir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolBarAbrir.Image = global::EditorTXT.Properties.Resources.folder;
-            this.toolBarAbrir.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolBarAbrir.Name = "toolBarAbrir";
-            this.toolBarAbrir.Size = new System.Drawing.Size(29, 32);
-            this.toolBarAbrir.Text = "Abrir";
-            this.toolBarAbrir.Click += new System.EventHandler(this.mArquivoAbrir_Click);
+            toolBarAbrir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolBarAbrir.Image = Properties.Resources.folder;
+            toolBarAbrir.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolBarAbrir.Name = "toolBarAbrir";
+            toolBarAbrir.Size = new System.Drawing.Size(29, 32);
+            toolBarAbrir.Text = "Abrir";
+            toolBarAbrir.Click += mArquivoAbrir_Click;
             // 
             // toolBarSalvar
             // 
-            this.toolBarSalvar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolBarSalvar.Image = global::EditorTXT.Properties.Resources.save;
-            this.toolBarSalvar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolBarSalvar.Name = "toolBarSalvar";
-            this.toolBarSalvar.Size = new System.Drawing.Size(29, 32);
-            this.toolBarSalvar.Text = "Salvar";
-            this.toolBarSalvar.Click += new System.EventHandler(this.mArquivoSalvar_Click);
+            toolBarSalvar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolBarSalvar.Image = Properties.Resources.save;
+            toolBarSalvar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolBarSalvar.Name = "toolBarSalvar";
+            toolBarSalvar.Size = new System.Drawing.Size(29, 32);
+            toolBarSalvar.Text = "Salvar";
+            toolBarSalvar.Click += mArquivoSalvar_Click;
             // 
             // toolStripSeparator5
             // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 35);
+            toolStripSeparator5.Name = "toolStripSeparator5";
+            toolStripSeparator5.Size = new System.Drawing.Size(6, 35);
             // 
             // toolBarFonte
             // 
-            this.toolBarFonte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.toolBarFonte.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolBarFonte.Font = new System.Drawing.Font("Sylfaen", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.toolBarFonte.Image = ((System.Drawing.Image)(resources.GetObject("toolBarFonte.Image")));
-            this.toolBarFonte.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolBarFonte.Name = "toolBarFonte";
-            this.toolBarFonte.Size = new System.Drawing.Size(29, 32);
-            this.toolBarFonte.Text = "A";
-            this.toolBarFonte.ToolTipText = "Formatar";
-            this.toolBarFonte.Click += new System.EventHandler(this.mFormatarFonte_Click);
+            toolBarFonte.BackColor = System.Drawing.Color.FromArgb(255, 255, 192);
+            toolBarFonte.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            toolBarFonte.Font = new System.Drawing.Font("Sylfaen", 9F, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            toolBarFonte.Image = (System.Drawing.Image)resources.GetObject("toolBarFonte.Image");
+            toolBarFonte.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolBarFonte.Name = "toolBarFonte";
+            toolBarFonte.Size = new System.Drawing.Size(29, 32);
+            toolBarFonte.Text = "A";
+            toolBarFonte.ToolTipText = "Formatar";
+            toolBarFonte.Click += mFormatarFonte_Click;
             // 
             // toolStripSeparator6
             // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 35);
+            toolStripSeparator6.Name = "toolStripSeparator6";
+            toolStripSeparator6.Size = new System.Drawing.Size(6, 35);
             // 
             // toolBarZoomMenos
             // 
-            this.toolBarZoomMenos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toolBarZoomMenos.ForeColor = System.Drawing.Color.Red;
-            this.toolBarZoomMenos.Image = global::EditorTXT.Properties.Resources.zoom;
-            this.toolBarZoomMenos.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolBarZoomMenos.Name = "toolBarZoomMenos";
-            this.toolBarZoomMenos.Size = new System.Drawing.Size(44, 32);
-            this.toolBarZoomMenos.Text = "-";
-            this.toolBarZoomMenos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.toolBarZoomMenos.ToolTipText = "- Zoom";
-            this.toolBarZoomMenos.Click += new System.EventHandler(this.mExibirZoomReduzir_Click);
+            toolBarZoomMenos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            toolBarZoomMenos.ForeColor = System.Drawing.Color.Red;
+            toolBarZoomMenos.Image = Properties.Resources.zoom;
+            toolBarZoomMenos.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolBarZoomMenos.Name = "toolBarZoomMenos";
+            toolBarZoomMenos.Size = new System.Drawing.Size(44, 32);
+            toolBarZoomMenos.Text = "-";
+            toolBarZoomMenos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            toolBarZoomMenos.ToolTipText = "- Zoom";
+            toolBarZoomMenos.Click += mExibirZoomReduzir_Click;
             // 
             // toolBarZoom
             // 
-            this.toolBarZoom.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolBarZoom.Image = global::EditorTXT.Properties.Resources.zoom;
-            this.toolBarZoom.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolBarZoom.Name = "toolBarZoom";
-            this.toolBarZoom.Size = new System.Drawing.Size(29, 32);
-            this.toolBarZoom.Text = "Zoom 100%";
-            this.toolBarZoom.Click += new System.EventHandler(this.mExibirZoomRestaurar_Click);
+            toolBarZoom.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolBarZoom.Image = Properties.Resources.zoom;
+            toolBarZoom.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolBarZoom.Name = "toolBarZoom";
+            toolBarZoom.Size = new System.Drawing.Size(29, 32);
+            toolBarZoom.Text = "Zoom 100%";
+            toolBarZoom.Click += mExibirZoomRestaurar_Click;
             // 
             // toolBarZoomMais
             // 
-            this.toolBarZoomMais.ForeColor = System.Drawing.Color.Green;
-            this.toolBarZoomMais.Image = global::EditorTXT.Properties.Resources.zoom;
-            this.toolBarZoomMais.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolBarZoomMais.Name = "toolBarZoomMais";
-            this.toolBarZoomMais.Size = new System.Drawing.Size(43, 32);
-            this.toolBarZoomMais.Text = "+";
-            this.toolBarZoomMais.ToolTipText = "+ Zoom";
-            this.toolBarZoomMais.Click += new System.EventHandler(this.mExibirZoomAmpliar_Click);
+            toolBarZoomMais.ForeColor = System.Drawing.Color.Green;
+            toolBarZoomMais.Image = Properties.Resources.zoom;
+            toolBarZoomMais.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolBarZoomMais.Name = "toolBarZoomMais";
+            toolBarZoomMais.Size = new System.Drawing.Size(43, 32);
+            toolBarZoomMais.Text = "+";
+            toolBarZoomMais.ToolTipText = "+ Zoom";
+            toolBarZoomMais.Click += mExibirZoomAmpliar_Click;
             // 
             // toolStripSeparator7
             // 
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 35);
+            toolStripSeparator7.Name = "toolStripSeparator7";
+            toolStripSeparator7.Size = new System.Drawing.Size(6, 35);
             // 
             // toolBarAjuda
             // 
-            this.toolBarAjuda.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolBarAjuda.Image = global::EditorTXT.Properties.Resources.help;
-            this.toolBarAjuda.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolBarAjuda.Name = "toolBarAjuda";
-            this.toolBarAjuda.Size = new System.Drawing.Size(29, 32);
-            this.toolBarAjuda.Text = "Ajuda";
-            this.toolBarAjuda.Click += new System.EventHandler(this.mAjudaExibirAjuda_Click);
+            toolBarAjuda.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolBarAjuda.Image = Properties.Resources.help;
+            toolBarAjuda.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolBarAjuda.Name = "toolBarAjuda";
+            toolBarAjuda.Size = new System.Drawing.Size(29, 32);
+            toolBarAjuda.Text = "Ajuda";
+            toolBarAjuda.Click += mAjudaExibirAjuda_Click;
             // 
             // txtConteudo
             // 
-            this.txtConteudo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtConteudo.Location = new System.Drawing.Point(0, 71);
-            this.txtConteudo.Name = "txtConteudo";
-            this.txtConteudo.Size = new System.Drawing.Size(782, 456);
-            this.txtConteudo.TabIndex = 4;
-            this.txtConteudo.Text = "";
-            this.txtConteudo.WordWrap = false;
+            txtConteudo.Dock = System.Windows.Forms.DockStyle.Fill;
+            txtConteudo.Location = new System.Drawing.Point(0, 71);
+            txtConteudo.Name = "txtConteudo";
+            txtConteudo.Size = new System.Drawing.Size(782, 456);
+            txtConteudo.TabIndex = 4;
+            txtConteudo.Text = "";
+            txtConteudo.WordWrap = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 553);
-            this.Controls.Add(this.txtConteudo);
-            this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.statusBar);
-            this.Controls.Add(this.menuBar);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuBar;
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "EditorTXT";
-            this.menuBar.ResumeLayout(false);
-            this.menuBar.PerformLayout();
-            this.statusBar.ResumeLayout(false);
-            this.statusBar.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(782, 553);
+            Controls.Add(txtConteudo);
+            Controls.Add(toolStrip1);
+            Controls.Add(statusBar);
+            Controls.Add(menuBar);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            MainMenuStrip = menuBar;
+            Name = "Form1";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "EditorTXT";
+            menuBar.ResumeLayout(false);
+            menuBar.PerformLayout();
+            statusBar.ResumeLayout(false);
+            statusBar.PerformLayout();
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -592,5 +561,6 @@
         private System.Windows.Forms.ToolStripButton toolBarZoom;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
         private System.Windows.Forms.ToolStripButton toolBarAjuda;
+        private System.Windows.Forms.ToolStripMenuItem mCarregarImagem;
     }
 }

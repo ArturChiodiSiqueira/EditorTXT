@@ -76,6 +76,12 @@ namespace EditorTXT
             }
         }
 
+        private void mCarregarImagem_Click(object sender, EventArgs e)
+        {
+            FormImage f = new FormImage();
+            f.Show();
+        }
+
         private void mArquivoSalvar_Click(object sender, EventArgs e)
         {
             if (File.Exists(Gerenciador.FilePath))
@@ -290,5 +296,7 @@ namespace EditorTXT
             f.Show();
         }
         #endregion
+
+        
     }
 }
